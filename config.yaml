@@ -1,7 +1,3 @@
-# {{{ Configuration file
 configuration:
   - git-user: Traap
   - clone-root: ~/git 
-
-# -------------------------------------------------------------------------- }}}
-
