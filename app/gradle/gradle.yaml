@@ -1,0 +1,10 @@
+# {{{ Installations
+installations:
+ - os:
+   - name: darwin
+     command:
+      - sudo: false
+        program: sdk 
+        argument: install gradle 4.5 
+
+# -------------------------------------------------------------------------- }}}
