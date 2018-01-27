@@ -1,0 +1,14 @@
+# {{{ Installations
+installations:
+ - os:
+   - name: cygwin 
+     command:
+      - sudo: no 
+        program: curl -s 
+        argument: https://get.sdkman.io | bash
+
+      - sudo: no
+        program: source 
+        argument: ~/.sdkman/bin/sdkman-init.sh
+
+# -------------------------------------------------------------------------- }}}
