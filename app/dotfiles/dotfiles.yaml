@@ -16,6 +16,11 @@ symlinks:
     - file: ~/git/dotfiles/dircolors
       link: ~/.dircolors
       directory: false
+
+    - file: ~/git/dotfiles/minttyrc
+      link: ~/.minttyrc
+      directory: false
+
 # -------------------------------------------------------------------------- }}}
 # {{{ Repositories
 repos:
