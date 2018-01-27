@@ -1,9 +1,12 @@
 #!/bin/bash
 # ------------------------------------------------------------------------------
-# This script is used to create an emend application folder and file.
+# This script is used to create an emend application folder and file, or
+# emend bundle folder and file.
 # ------------------------------------------------------------------------------
 
 # These flags enable optional features.
+appFlag=0     # Create a new emend applicaiton folder and file.
+bundleFlag=0  # Create a new amend bundle folder and file.
 errorFlag=0;  # A parseOptions error occured.
 helpFlag=1;   # Show help.
 
@@ -15,7 +18,12 @@ main() {
   if [ $helpFlag == 1 -o $errorFlag == 1 ]; then
     showHelp
   else
-   orchestrate
+    if [ $appFlag == 1 ]; then
+      newApp
+    fi 
+    if [ $bundleFlag == 1 ]; then
+      newBundle
+    fi
   fi
 }
 
@@ -29,6 +37,8 @@ function showHelp {
    echo
    echo "OPTIONS"
    echo "  --app           Application name to create."
+   echo
+   echo "  --bundle        Bundle name to create."
    echo
    echo "  --help          Display this help message."
    echo
@@ -50,6 +60,13 @@ function parseOptions {
         --app=*)
           APP="${var#*=}"
           helpFlag=0
+          appFlag=1
+          shift
+          ;;
+        --bundle=*)
+          BUNDLE="${var#*=}"
+          bundleFlag=1
+          helpFlag=0
           shift
           ;;
         --help)
@@ -65,14 +82,30 @@ function parseOptions {
 }
 
 # ------------------------------------------------------------------------------
-# orchestrate creating an emend application folder and file. 
-#
-# $1 application to create. 
+# Create a new app. 
 # ------------------------------------------------------------------------------
-orchestrate () {
+newApp() {
  echo "Creating emend application $APP"
+
+  subdir='app/'"${APP}"''
+
+  mkdir -pv ${subdir}
+
+  cp -v data/newapp.yaml ${subdir}/${APP}.yaml
 }
 
+# ------------------------------------------------------------------------------
+# Create a new bundle. 
+# ------------------------------------------------------------------------------
+newBundle() {
+ echo "Creating emend bundle $BUNDLE"
+
+  subdir='bundle/'"${BUNDLE}"''
+
+  mkdir -pv ${subdir}
+
+  cp -v data/newbundle.yaml ${subdir}/${BUNDLE}.yaml
+}
 # ------------------------------------------------------------------------------
 # Move from source to destination location.
 # Arguments:
