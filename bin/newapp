@@ -1,0 +1,87 @@
+#!/bin/bash
+# ------------------------------------------------------------------------------
+# This script is used to create an emend application folder and file.
+# ------------------------------------------------------------------------------
+
+# These flags enable optional features.
+errorFlag=0;  # A parseOptions error occured.
+helpFlag=1;   # Show help.
+
+# ------------------------------------------------------------------------------
+# Orchestrate the show.
+# ------------------------------------------------------------------------------
+main() {
+  parseOptions $@
+  if [ $helpFlag == 1 -o $errorFlag == 1 ]; then
+    showHelp
+  else
+   orchestrate
+  fi
+}
+
+# ------------------------------------------------------------------------------
+# Show the help text for the script and then terminate execution.
+# ------------------------------------------------------------------------------
+function showHelp {
+   echo
+   echo "Usage: newapp [OPTIONS]"
+   echo "Run newapp to create a new emend application folder and file."
+   echo
+   echo "OPTIONS"
+   echo "  --app           Application name to create."
+   echo
+   echo "  --help          Display this help message."
+   echo
+}
+
+# ------------------------------------------------------------------------------
+# Parse the command line options.   If the help flag is encountered, or if the
+# command line option is not recognized, then display the help information and
+# terminate gracefully.
+#
+# Arguments:
+# A non-empty array containing the command line options.
+# ------------------------------------------------------------------------------
+function parseOptions {
+    # Iterate through the list of options.
+    for var in "$@"
+    do
+      case $var in
+        --app=*)
+          APP="${var#*=}"
+          helpFlag=0
+          shift
+          ;;
+        --help)
+          helpFlag=1
+          ;;
+        *)
+          echo "Unknown argument $var"
+          echo
+          errorFlag=1
+          ;;
+      esac
+    done
+}
+
+# ------------------------------------------------------------------------------
+# orchestrate creating an emend application folder and file. 
+#
+# $1 application to create. 
+# ------------------------------------------------------------------------------
+orchestrate () {
+ echo "Creating emend application $APP"
+}
+
+# ------------------------------------------------------------------------------
+# Move from source to destination location.
+# Arguments:
+# #1 - Source file to move
+# #2 - destination location
+# ------------------------------------------------------------------------------
+moveFile() {
+  cp -fv $1 $2/
+}
+# Kick start this script.
+# ------------------------------------------------------------------------------
+main $@
