@@ -1,3 +1,8 @@
+# {{{ Include files
+includes:
+  - app:
+    - name: operating-system
+# -------------------------------------------------------------------------- }}}
 # {{{ Installations
 installations:
   - os:
@@ -5,10 +10,6 @@ installations:
       command:
        - sudo: true
          program: apt-get 
-         argument: update
- 
-       - sudo: true
-         program: apt-get 
-         argument: install default-jre 
+         argument: install -y default-jre 
 
 # -------------------------------------------------------------------------- }}}

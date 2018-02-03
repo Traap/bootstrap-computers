@@ -1,3 +1,8 @@
+# {{{ Include files
+includes:
+  - app:
+    - name: operating-system
+# -------------------------------------------------------------------------- }}}
 # {{{ Installations
 installations:
  - os:
@@ -5,7 +10,7 @@ installations:
      command:
         - sudo: true 
           program: apt-get 
-          argument: install build-essential
+          argument: install -y build-essential
 
         - sudo: false 
           program: brew 

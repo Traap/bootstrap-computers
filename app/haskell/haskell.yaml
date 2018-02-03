@@ -1,17 +1,22 @@
+# {{{ Include files
+includes:
+  - app:
+    - name: operating-system
+# -------------------------------------------------------------------------- }}}
 # -------------------------------------------------------------------------- }}}
 # {{{ Installations
 installations:
 - os:
   - name: darwin
     command:
-       - sudo: false
-         program: brew
-         argument: cask install haskell-platform
+    - sudo: false
+      program: brew
+      argument: cask install haskell-platform
  
   - name: linux 
     command:
-       - sudo: true 
-         program: apt-get 
-         argument:  install haskell-platform
+    - sudo: true 
+      program: apt-get 
+      argument:  install -y haskell-platform
 
 # -------------------------------------------------------------------------- }}}

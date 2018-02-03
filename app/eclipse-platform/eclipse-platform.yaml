@@ -1,14 +1,15 @@
+# {{{ Include files
+includes:
+  - app:
+    - name: operating-system
+# -------------------------------------------------------------------------- }}}
 # {{{ Installations
 installations:
   - os:
     - name: linux
       command:
        - sudo: true
-         program: apt-get 
-         argument: update
- 
-       - sudo: true
-         program: apt-get 
-         argument: install eclipse-platform
+         program: apt-get
+         argument: install -y eclipse-platform
 
 # -------------------------------------------------------------------------- }}}

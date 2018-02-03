@@ -6,5 +6,6 @@ includes:
     - name: eclipse-platform
     - name: maven
     - name: gradle
+    - name: selenium-webdriver
 
 # -------------------------------------------------------------------------- }}}
