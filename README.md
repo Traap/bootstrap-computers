@@ -13,22 +13,22 @@ $ git clone http://github.com/Traap/emend-computer.git
 ```
 
 ## How to install an application. 
-These example installs the gcc and Haskell compile specific to the operations
-system [emend](https://github.com/emend) is run from.
+These examples install bash-git-prompt and colors applications to the speicic
+operating sytesm [emend](https://github.com/emend) is run from.
 
 ```
 cd emend-computer
-emend --verbose --nodryrun --app=gcc
+emend --verbose --nodryrun --app=bash-git-prompt
 
-emend --verbose --nodryrun --app=haskell
+emend --verbose --nodryrun --app=colors
 ```
 
-## Custom installations:
-This example shows how to install TMUX.
+## How to install a bundle. 
+This example shows how to install the basic bundle. 
 
 ```bash
 cd emend-computer
-emend --verbose --nodryrun --file=apps/tmux/tmux.yaml
+emend --verbose --nodryrun --bundle=basic
 
 ```
 # Project Management
