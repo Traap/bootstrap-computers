@@ -5,9 +5,9 @@ installations:
      command:
       - sudo: true 
         program: apt-get 
-        argument: update 
+        argument: -y update 
 
       - sudo: true 
         program: apt-get 
-        argument: upgrade
+        argument: -y upgrade
 # -------------------------------------------------------------------------- }}}
