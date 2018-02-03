@@ -10,4 +10,8 @@ installations:
       - sudo: true 
         program: apt-get 
         argument: -y upgrade
+
+      - sudo: true 
+        program: apt-get 
+        argument: -y autoremove 
 # -------------------------------------------------------------------------- }}}
