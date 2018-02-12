@@ -9,7 +9,7 @@ installations:
 
        - sudo: true
          program: mv 
-         argument: mv -f ~/selenium-server-standalone-3.4.0.jar /usr/local/bin/selenium-server-standalone.jar
+         argument: -f ~/selenium-server-standalone-3.4.0.jar /usr/local/bin/selenium-server-standalone.jar
 
        - sudo: true
          program: chown 
