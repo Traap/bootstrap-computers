@@ -8,14 +8,14 @@ installations:
          argument: -N http://selenium-release.storage.googleapis.com/selenium-server-standalone-3.4.0.jar -P ~/
 
        - sudo: true
-         program: sudo
+         program: mv 
          argument: mv -f ~/selenium-server-standalone-3.4.0.jar /usr/local/bin/selenium-server-standalone.jar
 
        - sudo: true
-         program: sudo
-         argument: chown root:root /usr/local/bin/selenium-server-standalone.jar
+         program: chown 
+         argument: root:root /usr/local/bin/selenium-server-standalone.jar
 
        - sudo: true
-         program: sudo
-         argument: chmod 0755 /usr/local/bin/selenium-server-standalone.jar
+         program: chmod 
+         argument: 0755 /usr/local/bin/selenium-server-standalone.jar
 # -------------------------------------------------------------------------- }}}
