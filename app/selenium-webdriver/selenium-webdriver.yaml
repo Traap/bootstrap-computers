@@ -5,11 +5,11 @@ installations:
       command:
        - sudo: true
          program: wget
-         argument: -N http://selenium-release.storage.googleapis.com/selenium-server-standalone-3.4.0.jar -P ~/
+         argument: -N http://selenium-release.storage.googleapis.com/selenium-server-standalone-3.9.1.jar -P ~/
 
        - sudo: true
          program: mv 
-         argument: -f ~/selenium-server-standalone-3.4.0.jar /usr/local/bin/selenium-server-standalone.jar
+         argument: -f ~/selenium-server-standalone-3.9.1.jar /usr/local/bin/selenium-server-standalone.jar
 
        - sudo: true
          program: chown 
