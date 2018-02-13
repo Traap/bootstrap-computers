@@ -20,11 +20,11 @@ installations:
          program: cd ~/git/emend &&
          argument: bundle exec rake 
 
-        - sudo: false
+       - sudo: false
          program: cd ~/git/emend &&
          argument: bundle exec rake install
  
-        - sudo: false
+       - sudo: false
          program: emend 
          argument: --version 
 # -------------------------------------------------------------------------- }}}
