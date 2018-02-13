@@ -8,5 +8,13 @@ includes:
     - name: gradle
     - name: selenium-webdriver
     - name: google-chrome
+    - name: tlc-article
+    # Added hook to new apps.
+    # - name: docbld
+    # - name: amber
+    # - name: emend
+    # - name: emend-computer
+    # - name: ui-automation
+    # - name: autodoc
     
 # -------------------------------------------------------------------------- }}}
