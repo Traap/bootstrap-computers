@@ -3,8 +3,7 @@ repos:
   - repo:
     url: http://github.com
     paths:
-      - source: Traap/docbld.git 
+      - source: Traap/docbld
         target: ~/git/docbld
 
 # -------------------------------------------------------------------------- }}}
-
