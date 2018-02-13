@@ -14,17 +14,17 @@ installations:
       command:
        - sudo: false
          program: cd ~/git/amber &&
-         argument: bundle install 
- 
+         argument: bundle install
+
        - sudo: false
          program: cd ~/git/amber &&
-         argument: bundle exec rake 
+         argument: bundle exec rake
 
-        - sudo: false
+       - sudo: false
          program: cd ~/git/amber &&
          argument: bundle exec rake install
- 
-        - sudo: false
-         program: amber 
-         argument: --version 
-# -------------------------------------------------------------------------- }}}
+
+       - sudo: false
+         program: amber
+         argument: --version
+# ------------------------------------------------------------------------- }}}
