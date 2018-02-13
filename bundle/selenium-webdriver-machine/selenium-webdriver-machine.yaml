@@ -7,5 +7,6 @@ includes:
     - name: maven
     - name: gradle
     - name: selenium-webdriver
-
+    - name: google-chrome
+    
 # -------------------------------------------------------------------------- }}}
