@@ -1,0 +1,9 @@
+# {{{ Repositories
+repos:
+  - repo:
+    url: http://github.com
+    paths:
+      - source: Traap/autodoc
+        target: ~/git/autodoc
+
+# -------------------------------------------------------------------------- }}}

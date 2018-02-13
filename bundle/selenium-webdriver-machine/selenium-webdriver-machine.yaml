@@ -1,20 +1,16 @@
 # {{{ Include files
 includes:
   - app:
-    - name: openjre-8-jre
     - name: openjdk-8-jdk
     - name: eclipse-platform
-    - name: maven
     - name: gradle
-    - name: selenium-webdriver
+    # - name: selenium-webdriver
     - name: google-chrome
     - name: tlc-article
-    # Added hook to new apps.
-    # - name: docbld
-    # - name: amber
-    # - name: emend
-    # - name: emend-computer
-    # - name: ui-automation
-    # - name: autodoc
+    - name: docbld
+    - name: amber
+    - name: emend-computer
+    - name: ui-automation
+    - name: autodoc
     
 # -------------------------------------------------------------------------- }}}
