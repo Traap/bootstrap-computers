@@ -6,11 +6,11 @@ includes:
     - name: gradle
     # - name: selenium-webdriver
     - name: google-chrome
-    - name: tlc-article
     - name: docbld
     - name: amber
-    - name: emend-computer
     - name: ui-automation
     - name: autodoc
+    - name: texlivefull
+    - name: tlc-article
     
 # -------------------------------------------------------------------------- }}}
