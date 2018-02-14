@@ -4,13 +4,13 @@ includes:
     - name: openjdk-8-jdk
     - name: eclipse-platform
     - name: gradle
-    # - name: selenium-webdriver
+    - name: selenium-webdriver
     - name: google-chrome
     - name: docbld
     - name: amber
     - name: ui-automation
     - name: autodoc
-    - name: texlivefull
+    - name: texlive
     - name: tlc-article
     
 # -------------------------------------------------------------------------- }}}
