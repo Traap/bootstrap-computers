@@ -47,11 +47,11 @@ installations:
           argument: ppa:jonathonf/texlive
 
         - sudo: true 
-          program: apt
-          argument: update
+          program: apt-get
+          argument: -y update
 
         - sudo: true 
-          program: apt 
-          argument: install texlive-full 
+          program: apt-get
+          argument: -y install texlive-full 
 
 # -------------------------------------------------------------------------- }}}
