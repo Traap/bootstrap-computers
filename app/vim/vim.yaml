@@ -1,37 +1,37 @@
 # {{{ Symbolic Links
-symlinks:
-  - symlink:
-    - file: ~/git/vim/gvimrc
-      link: ~/.gvimrc
-      directory: false
-
-    - file: ~/git/vim
-      link: ~/.vim
-      directory: true
-
-    - file: ~/git/vim/viminfo
-      link: ~/.viminfo
-      directory: false
-
-    - file: ~/git/vim/vimrc
-      link: ~/.vimrc
-      directory: false
-
-    - file: ~/git/vim/vimrc_background
-      link: ~/.vimrc_background
-      directory: false
+# symlinks:
+# - symlink:
+#   - file: ~/git/vim/gvimrc
+#     link: ~/.gvimrc
+#     directory: false
+#
+#   - file: ~/git/vim
+#     link: ~/.vim
+#     directory: true
+#
+#   - file: ~/git/vim/viminfo
+#     link: ~/.viminfo
+#     directory: false
+#
+#   - file: ~/git/vim/vimrc
+#     link: ~/.vimrc
+#     directory: false
+#
+#   - file: ~/git/vim/vimrc_background
+#     link: ~/.vimrc_background
+#     directory: false
 # -------------------------------------------------------------------------- }}}
 # {{{ Repositories
-repos:
-  - repo:
-    url: http://github.com
-    paths:
-      - source: Traap/vim
-        target: ~/git/vim
-
-      - source: junegunn/vim-plug
-        target: ~/git/vim/autoload/vim-plug
-
+#epos:
+# - repo:
+#   url: http://github.com
+#   paths:
+#     - source: Traap/vim
+#       target: ~/git/vim
+#
+#     - source: junegunn/vim-plug
+#       target: ~/git/vim/autoload/vim-plug
+#
 # -------------------------------------------------------------------------- }}}
 # {{{ Installations
 installations:
@@ -46,7 +46,7 @@ installations:
         program: brew
         argument: install vim --with-client-server
 
-   - name: linux
+   - name: donot-use  
      command:
       - sudo: true 
         program: apt-get -y install
@@ -99,6 +99,20 @@ installations:
       - sudo: no
         program: cd ~/vim && make
         argument: install 
+
+   - name: linux 
+     command:
+      - sudo: true 
+        program: apt-add-repository 
+        argument: -y ppa:jonathonf/vim
+
+      - sudo: true 
+        program: apt-get
+        argument: -y update 
+
+      - sudo: true 
+        program: apt-get 
+        argument: -y install vim 
 
    - name: any
      command:
