@@ -8,9 +8,12 @@ includes:
     - name: google-chrome
     - name: docbld
     - name: amber
-    - name: ui-automation
+    - name: ui-automation-core
+    - name: ui-automation-centerium
+    - name: ui-automation-onedruglib
     - name: autodoc
-    - name: texlive
-    - name: tlc-article
+# Suspend these for now.  texlive is 2.5GB
+#    - name: texlive
+#    - name: tlc-article
     
 # -------------------------------------------------------------------------- }}}
