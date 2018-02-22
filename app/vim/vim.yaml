@@ -48,8 +48,8 @@ installations:
 
    - name: linux
      command:
-      - sudo: yes
-        program: apt-get install
+      - sudo: true 
+        program: apt-get -y install
         argument: > 
           libatk1.0-dev
           libbonoboui2-dev
@@ -69,7 +69,7 @@ installations:
           ruby-dev
 
       - sudo: yes
-        program: apt-get remove
+        program: apt-get -y remove
         argument: vim vim-runtime gvim
 
       - sudo: no
