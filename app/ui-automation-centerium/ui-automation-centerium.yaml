@@ -3,7 +3,7 @@ repos:
   - repo:
     url: http://github.com
     paths:
-      - source: Traap/ui-automation
-        target: ~/git/ui-automation
+      - source: Traap/ui-automation-centerium
+        target: ~/git/ui-automation-centerium
 
 # -------------------------------------------------------------------------- }}}

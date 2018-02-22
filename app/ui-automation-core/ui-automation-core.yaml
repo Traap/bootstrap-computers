@@ -1,0 +1,9 @@
+# {{{ Repositories
+repos:
+  - repo:
+    url: http://github.com
+    paths:
+      - source: Traap/ui-automation-core
+        target: ~/git/ui-automation-core
+
+# -------------------------------------------------------------------------- }}}

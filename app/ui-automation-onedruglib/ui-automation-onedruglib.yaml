@@ -1,0 +1,9 @@
+# {{{ Repositories
+repos:
+  - repo:
+    url: http://github.com
+    paths:
+      - source: Traap/ui-automation-onedruglib
+        target: ~/git/ui-automation-onedruglib
+
+# -------------------------------------------------------------------------- }}}
