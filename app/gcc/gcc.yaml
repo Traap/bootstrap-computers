@@ -6,12 +6,8 @@ includes:
 # {{{ Installations
 installations:
  - os:
-   - name: linux 
+   - name: darwin 
      command:
-        - sudo: true 
-          program: apt-get 
-          argument: install -y build-essential
-
         - sudo: false 
           program: brew 
           argument: gcc 
@@ -28,4 +24,15 @@ installations:
         - sudo: false 
           program: brew 
           argument: doctor 
+
+   - name: linux 
+     command:
+        - sudo: true 
+          program: apt-get 
+          argument: install -y build-essential
+
+        - sudo: true 
+          program: apt-get 
+          argument: install -y gcc 
+
 # -------------------------------------------------------------------------- }}}
