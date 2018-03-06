@@ -1,4 +1,4 @@
- {{{ Symbolic Links
+# {{{ Symbolic Links
 symlinks:
  - symlink:
    - file: ~/git/vim/gvimrc
