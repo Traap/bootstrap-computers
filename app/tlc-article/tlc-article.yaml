@@ -10,7 +10,7 @@ repos:
 # {{{ Installations
 installations:
  - os:
-   - name: any
+   - name: linux
      command:
         - sudo: yes
           program: mkdir
@@ -23,5 +23,20 @@ installations:
         - sudo: yes
           program: mktexlsr
           argument: $(kpsewhich -var-value TEXMFLOCAL)
-# -------------------------------------------------------------------------- }}}
 
+   - name: mingw32
+     command:
+      - sudo: false
+        program: mkdir
+        argument:  C:\Users\User\AppData\Roaming\MikTeX\2.9\tex\latex\tlc-article
+
+      - sudo: false
+        program: copy
+        argument: >
+          ~\git\tlc-article\tlc-article.cls
+          C:\Users\User\AppData\Roaming\MikTeX\2.9\tex\latex\tlc-article\tlc-article.cls
+
+      - sudo: false
+        program: rmdir
+        argument: /q/s ~
+# -------------------------------------------------------------------------- }}}

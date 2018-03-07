@@ -1,11 +1,18 @@
 # {{{ Include files
 includes:
   - app:
-    - name: amber
-    - name: docbld
-    - name: autodoc
-    - name: emend
-    - name: emend-computer
-    - name: tool-validation
+    # Note:
+    # manually clone the following repos.
+    # build amber and emend drivers.
+    #
+    # - name: amber
+    # - name: docbld
+    # - name: autodoc
+    # - name: emend
+    # - name: emend-computer
+    # - name: tool-validation
+    - name: perl
+    - name: miktex
+    - name: texstudio
     - name: tlc-article
 # -------------------------------------------------------------------------- }}}
