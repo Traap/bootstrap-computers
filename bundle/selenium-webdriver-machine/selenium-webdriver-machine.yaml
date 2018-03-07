@@ -12,8 +12,11 @@ includes:
     - name: ui-automation-centerium
     - name: ui-automation-onedruglib
     - name: autodoc
+    - name: atom
+    - name: miktex
+    - name: texstudio
 # Suspend these for now.  texlive is 2.5GB
 #    - name: texlive
 #    - name: tlc-article
-    
+
 # -------------------------------------------------------------------------- }}}

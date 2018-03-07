@@ -1,0 +1,11 @@
+# {{{ Include files
+includes:
+  - app:
+    - name: amber
+    - name: docbld
+    - name: autodoc
+    - name: emend
+    - name: emend-computer
+    - name: tool-validation
+    - name: tlc-article
+# -------------------------------------------------------------------------- }}}

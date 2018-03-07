@@ -46,19 +46,25 @@ installations:
         program: brew
         argument: install vim --with-client-server
 
-   - name: linux 
+   - name: linux
      command:
-      - sudo: true 
-        program: apt-add-repository 
+      - sudo: true
+        program: apt-add-repository
         argument: -y ppa:jonathonf/vim
 
-      - sudo: true 
+      - sudo: true
         program: apt-get
-        argument: -y update 
+        argument: -y update
 
-      - sudo: true 
-        program: apt-get 
-        argument: -y install vim 
+      - sudo: true
+        program: apt-get
+        argument: -y install vim
+
+   - name: mingw32
+     command:
+      - sudo: false
+        program: choco
+        argument: install vim -y
 
    - name: any
      command:

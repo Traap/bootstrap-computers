@@ -18,4 +18,14 @@ installations:
        - sudo: true
          program: chmod 
          argument: 0755 /usr/local/bin/selenium-server-standalone.jar
+
+    - name: mingw32 
+      command:
+       - sudo: false
+         program: choco 
+         argument: install selinium -y 
+
+       - sudo: false
+         program: choco 
+         argument: install selenium-chrome-driver -y 
 # -------------------------------------------------------------------------- }}}

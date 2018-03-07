@@ -40,18 +40,18 @@ installations:
           argument: install-tl-unx.tar.gz
 
    # http://tipsonubuntu.com/2016/09/16/install-tex-live-2016-ubuntu-16-04-14-04/
-   - name: linux 
+   - name: linux
      command:
-        - sudo: true 
-          program: apt-add-repository 
+        - sudo: true
+          program: apt-add-repository
           argument: ppa:jonathonf/texlive
 
-        - sudo: true 
+        - sudo: true
           program: apt-get
           argument: -y update
 
-        - sudo: true 
+        - sudo: true
           program: apt-get
-          argument: -y install texlive-full 
+          argument: -y install texlive-full
 
 # -------------------------------------------------------------------------- }}}
