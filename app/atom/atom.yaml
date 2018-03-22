@@ -1,6 +1,12 @@
 # {{{ Installations
 installations:
   - os:
+    - name: cygwin 
+      command:
+       - sudo: false 
+         program: choco
+         argument: install -y atom
+
     - name: mingw32 
       command:
        - sudo: false

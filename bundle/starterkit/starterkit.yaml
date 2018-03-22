@@ -5,12 +5,12 @@ includes:
     # manually clone the following repos.
     # build amber and emend drivers.
     #
-    # - name: amber
-    # - name: docbld
-    # - name: autodoc
-    # - name: emend
-    # - name: emend-computer
-    # - name: tool-validation
+    - name: amber
+    - name: docbld
+    - name: autodoc
+    - name: emend
+    - name: emend-computer
+    - name: tool-validation
     - name: perl
     - name: miktex
     - name: texstudio

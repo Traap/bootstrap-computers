@@ -19,6 +19,16 @@ installations:
          program: chmod 
          argument: 0755 /usr/local/bin/selenium-server-standalone.jar
 
+    - name: cygwin 
+      command:
+       - sudo: false
+         program: choco 
+         argument: install selinium -y 
+
+       - sudo: false
+         program: choco 
+         argument: install selenium-all-drivers -y 
+
     - name: mingw32 
       command:
        - sudo: false
@@ -27,5 +37,5 @@ installations:
 
        - sudo: false
          program: choco 
-         argument: install selenium-chrome-driver -y 
+         argument: install selenium-all-drivers -y 
 # -------------------------------------------------------------------------- }}}

@@ -18,4 +18,10 @@ installations:
          program: choco
          argument: install -y gradle
 
+    - name: cygwin 
+      command:
+       - sudo: true
+         program: choco
+         argument: install -y gradle
+
 # -------------------------------------------------------------------------- }}}
