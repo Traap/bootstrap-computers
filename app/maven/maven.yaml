@@ -5,11 +5,23 @@ includes:
 # -------------------------------------------------------------------------- }}}
 # {{{ Installations
 installations:
-  - os:
-    - name: linux
-      command:
-       - sudo: true
-         program: apt-get 
-         argument: install -y maven 
+ - os:
+   - name: linux
+     command:
+      - sudo: true
+        program: apt-get
+        argument: install -y maven
+
+   - name: cygwin
+     command:
+      - sudo: false
+        program: choco
+        argument: install -y maven
+
+   - name: mingw32
+     command:
+      - sudo: false
+        program: choco
+        argument: install -y maven
 
 # -------------------------------------------------------------------------- }}}

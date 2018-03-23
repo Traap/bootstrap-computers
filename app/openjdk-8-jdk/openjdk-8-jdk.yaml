@@ -12,10 +12,16 @@ installations:
          program: apt-get 
          argument: install -y openjdk-8-jdk
 
+    - name: cygwin 
+      command:
+       - sudo: false 
+         program: choco 
+         argument: install -y jdk8
+
     - name: mingw32 
       command:
        - sudo: false 
          program: choco 
-         argument: install jdk8 -y 
+         argument: install -y jdk8
 
 # -------------------------------------------------------------------------- }}}

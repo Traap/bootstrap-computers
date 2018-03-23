@@ -11,4 +11,14 @@ installations:
         program: source 
         argument: ~/.sdkman/bin/sdkman-init.sh
 
+   - name: migwin32 
+     command:
+      - sudo: no 
+        program: curl -s 
+        argument: https://get.sdkman.io | bash
+
+      - sudo: no
+        program: source 
+        argument: ~/.sdkman/bin/sdkman-init.sh
+
 # -------------------------------------------------------------------------- }}}

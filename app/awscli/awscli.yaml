@@ -1,0 +1,22 @@
+# {{{ Installations
+installations:
+  - os:
+    - name: darwin
+      command:
+       - sudo: false
+         program: brew 
+         argument: isntall awscli 
+ 
+    - name: cygwin
+      command:
+       - sudo: false
+         program: choco
+         argument: install -y awscli
+
+    - name: mingw32
+      command:
+       - sudo: false
+         program: choco
+         rgument: install -y awscli 
+ 
+# -------------------------------------------------------------------------- }}}
