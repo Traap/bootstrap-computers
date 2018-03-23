@@ -8,24 +8,34 @@ installations:
          argument: -N http://selenium-release.storage.googleapis.com/3.9/selenium-server-standalone-3.9.1.jar
 
        - sudo: true
-         program: mv 
+         program: mv
          argument: -fv selenium-server-standalone-3.9.1.jar /usr/local/bin/selenium-server-standalone.jar
 
        - sudo: true
-         program: chown 
+         program: chown
          argument: root:root /usr/local/bin/selenium-server-standalone.jar
 
        - sudo: true
-         program: chmod 
+         program: chmod
          argument: 0755 /usr/local/bin/selenium-server-standalone.jar
 
-    - name: mingw32 
+    - name: cygwin
       command:
        - sudo: false
-         program: choco 
-         argument: install selinium -y 
+         program: choco
+         argument: install -y selinium
 
        - sudo: false
-         program: choco 
-         argument: install selenium-chrome-driver -y 
+         program: choco
+         argument: install -y selenium-all-drivers
+
+    - name: mingw32
+      command:
+       - sudo: false
+         program: choco
+         argument: install -y selinium
+
+       - sudo: false
+         program: choco
+         argument: install -y selenium-all-drivers
 # -------------------------------------------------------------------------- }}}

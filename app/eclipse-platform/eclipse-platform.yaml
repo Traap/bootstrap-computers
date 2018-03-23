@@ -6,10 +6,22 @@ includes:
 # {{{ Installations
 installations:
   - os:
-    - name: linux
-      command:
-       - sudo: true
-         program: apt-get
-         argument: install -y eclipse-platform
+   - name: linux
+     command:
+      - sudo: true
+        program: apt-get
+        argument: install -y eclipse-platform
+
+   - name: cygwin
+     command:
+      - sudo: false
+        program: choco
+        argument: install -y eclipse 
+
+   - name: mingw32
+     command:
+      - sudo: false
+        program: choco
+        argument: install -y eclipse 
 
 # -------------------------------------------------------------------------- }}}

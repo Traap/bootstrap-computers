@@ -1,0 +1,15 @@
+# {{{ Installations
+installations:
+  - os:
+    - name: cygwin 
+      command:
+       - sudo: false 
+         program: choco
+         argument: install -y firefox
+
+    - name: mingw32
+      command:
+       - sudo: false 
+         program: choco
+         argument: install -y firefox 
+# -------------------------------------------------------------------------- }}}

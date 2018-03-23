@@ -1,9 +1,15 @@
 # {{{ Installations
 installations:
  - os:
+  - name: cygwin
+    command:
+      - sudo: false
+        program: choco
+        argument: install -y miktex
+
    - name: mingw32
      command:
       - sudo: false
         program: choco
-        argument: install miktex -y
+        argument: install -y miktex
 # -------------------------------------------------------------------------- }}}

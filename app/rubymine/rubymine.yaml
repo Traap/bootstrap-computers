@@ -5,11 +5,11 @@ installations:
      command:
       - sudo: false
         program: choco
-        argument: install -y activeperl
+        argument: install -y rubymine
 
    - name: mingw32
      command:
       - sudo: false
         program: choco
-        argument: install -y activeperl
+        argument: install -y rubymine
 # -------------------------------------------------------------------------- }}}

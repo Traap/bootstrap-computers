@@ -29,4 +29,16 @@ installations:
       - sudo: yes
         program: gdebi
         argument: google-chrome-stable_current_amd64.deb
+
+    - name: cygwin 
+      command:
+       - sudo: false 
+         program: choco
+         argument: install -y googlechrome 
+
+    - name: mingw32
+      command:
+       - sudo: false 
+         program: choco
+         argument: install -y googlechrome 
 # -------------------------------------------------------------------------- }}}
