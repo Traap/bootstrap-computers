@@ -1,26 +1,26 @@
 # {{{ Symbolic Links
 symlinks:
- - symlink:
-   - file: ~/git/vim/gvimrc
-     link: ~/.gvimrc
-     directory: false
+  - symlink:
+    - file: ~/git/vim/gvimrc
+      link: ~/.gvimrc
+      directory: false
 
-   - file: ~/git/vim
-     link: ~/.vim
-     directory: true
+    - file: ~/git/vim
+      link: ~/.vim
+      directory: true
 
-   - file: ~/git/vim/viminfo
-     link: ~/.viminfo
-     directory: false
+    - file: ~/git/vim/viminfo
+      link: ~/.viminfo
+      directory: false
 
-   - file: ~/git/vim/vimrc
-     link: ~/.vimrc
-     directory: false
+    - file: ~/git/vim/vimrc
+      link: ~/.vimrc
+      directory: false
 
-   - file: ~/git/vim/vimrc_background
-     link: ~/.vimrc_background
-     directory: false
-# -------------------------------------------------------------------------- }}}
+    - file: ~/git/vim/vimrc_background
+      link: ~/.vimrc_background
+      directory: false
+      # -------------------------------------------------------------------------- }}}
 # {{{ Repositories
 repos:
  - repo:
