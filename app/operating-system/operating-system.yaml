@@ -14,4 +14,11 @@ installations:
       - sudo: true 
         program: apt-get 
         argument: -y autoremove 
+
+   - name: msys2
+     command:
+      - sudo: false 
+        program: pacman 
+        argument: --noconfirm -Su
+
 # -------------------------------------------------------------------------- }}}

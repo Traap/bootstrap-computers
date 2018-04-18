@@ -12,4 +12,9 @@ installations:
          program: apt-get
          argument: install -y eclipse-platform
 
+    - name: cygwin
+      command:
+        - sudo: no
+          program: choco
+          argument: install -y eclipse
 # -------------------------------------------------------------------------- }}}

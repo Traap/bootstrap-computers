@@ -12,9 +12,15 @@ installations:
          program: apt-get
          argument: install -y gradle
 
+    - name:
+      command:
+       - sudo: false
+         program: choco
+         argument: install -y gradle
+
     - name: mingw32
       command:
-       - sudo: true
+       - sudo: false
          program: choco
          argument: install -y gradle
 

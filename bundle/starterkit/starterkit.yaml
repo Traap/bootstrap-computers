@@ -1,18 +1,20 @@
 # {{{ Include files
 includes:
   - app:
-    # Note:
-    # manually clone the following repos.
-    # build amber and emend drivers.
-    #
-    # - name: amber
-    # - name: docbld
-    # - name: autodoc
-    # - name: emend
-    # - name: emend-computer
-    # - name: tool-validation
-    - name: perl
-    - name: miktex
-    - name: texstudio
-    - name: tlc-article
+    - name: amber
+    - name: docbld
+    - name: autodoc
+    - name: bash-git-prompt
+    - name: color
+    - name: docbld
+    - name: dotfiles
+    - name: emend
+    - name: emend-computer
+    - name: gradle
+    - name: ssh
+    - name: tmux
+    - name: tool-validation
+    - name: ui-automation-centerium
+    - name: ui-automation-onedruglib 
+#    - name: tlc-article
 # -------------------------------------------------------------------------- }}}

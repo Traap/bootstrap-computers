@@ -23,7 +23,12 @@ installations:
 
         - sudo: false 
           program: brew 
-          argument: doctor 
+          argument: doctor
+          
+   - name: msys
+        - sudo: false 
+          program: pacman 
+          argument: --noconfirm -S gcc   
 
    - name: linux 
      command:
