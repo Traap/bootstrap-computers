@@ -3,7 +3,7 @@ configuration items [emend](https://github.com/emend) processes.
 
 ## Prerequisites
 1. Ruby
-2. [emend](https://github.com/emend)
+2. [emend](https://github.com/Traap/emend)
 
 ## Installation
 ### emend-computer 
