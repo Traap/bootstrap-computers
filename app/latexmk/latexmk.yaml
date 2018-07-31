@@ -1,0 +1,15 @@
+# {{{ Include files
+includes:
+  - app:
+    - name: operating-system
+# -------------------------------------------------------------------------- }}}
+# {{{ Installations
+installations:
+ - os:
+   - name: linux
+     command:
+      - sudo: true
+        program: apt
+        argument: install latexmk 
+
+# -------------------------------------------------------------------------- }}}
