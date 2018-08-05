@@ -28,11 +28,14 @@ installations:
 
       - sudo: true
         program: apt-get 
-        argument: > 
-          adv --keyserver hkp://keyserver.ubuntu.com:80 
-          --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889
+        argument: install miktex 
 
-      - sudo: false
+      - sudo: true 
         program: miktexsetup 
+        argument: --shared=yes finish
+
+      - sudo: true
+        program: initexmf
+        argumnet: --admin --set-config-value=[MPM]AutoInstall=1
 
 # -------------------------------------------------------------------------- }}}
