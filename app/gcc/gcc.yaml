@@ -10,10 +10,6 @@ installations:
      command:
         - sudo: false 
           program: brew 
-          argument: gcc 
-
-        - sudo: false 
-          program: brew 
           argument: update 
 
         # No kidding, do it twice.
@@ -24,6 +20,10 @@ installations:
         - sudo: false 
           program: brew 
           argument: doctor
+
+        - sudo: false 
+          program: brew 
+          argument: gcc 
           
    - name: msys
         - sudo: false 
