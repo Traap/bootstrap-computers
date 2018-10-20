@@ -8,6 +8,7 @@ includes:
     - name: colors
     - name: docbld
     - name: dotfiles
-    - name: ssh
-    - name: tmux
+    - name: vim 
+    - name: tlc-article
+    - name: iterm2
 # -------------------------------------------------------------------------- }}}
