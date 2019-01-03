@@ -1,3 +1,4 @@
 configuration:
   - git-user: Traap
+  - git-email: gary.a.howard@mac.com
   - clone-root: ~/git 
