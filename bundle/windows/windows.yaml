@@ -1,0 +1,10 @@
+# {{{ Include files
+includes:
+  - bundles:
+    - name: basic
+    - name: advanced 
+    - name: editors 
+    - name: latex
+    - name: automation 
+
+# -------------------------------------------------------------------------- }}}

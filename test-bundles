@@ -1,0 +1,14 @@
+#!/bin/bash
+test() {
+  echo "------------------------------"
+  echo "bundle: $1"
+  emend --verbose --bundle $1
+}
+
+test advanced
+test automation
+test basic
+test editors
+test latex
+test osx
+test windows

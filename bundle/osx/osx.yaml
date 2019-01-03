@@ -1,0 +1,16 @@
+# {{{ Include files
+includes:
+  - app:
+    - name: brew
+    - name: iterm2
+    - name: keycastr
+
+  - bundles:
+    - name: basic
+    - name: advanced 
+    - name: editors
+    - name: latex
+    - name: automation 
+
+# -------------------------------------------------------------------------- }}}
+

@@ -2,8 +2,7 @@
 includes:
   - app:
     - name: operating-system
-    - name: colors
-    - name: bash-git-prompt
-    - name: dotfiles
-
+    - name: atom 
+    - name: vim 
+    - name: vscode
 # -------------------------------------------------------------------------- }}}
