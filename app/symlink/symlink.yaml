@@ -1,0 +1,20 @@
+# {{{ Symbolic Links
+symlinks:
+  - symlink:
+    - file: ~/git/dotfiles/bash_profile
+      link: ~/linkA
+      directory: false
+
+    - file: ~/git/dotfiles/bashrc
+      link: ~/linkB
+      directory: false
+
+    - file: ~/git/dotfiles/inputrc
+      link: ~/linkC
+      directory: false
+
+    - file: ~/git/dotfiles/minttyrc
+      link: ~/linkD
+      directory: false
+
+# -------------------------------------------------------------------------- }}}
