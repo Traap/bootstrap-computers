@@ -2,6 +2,7 @@
 includes:
   - app:
     - name: operating-system
+
 # -------------------------------------------------------------------------- }}}
 # {{{ Installations
 installations:
@@ -9,19 +10,13 @@ installations:
     - name: linux
       command:
        - sudo: true
-         program: apt-get
-         argument: install -y gradle
-
-    - name:
-      command:
-       - sudo: false
-         program: choco
+         program: apt-get install -y
          argument: install -y gradle
 
     - name: mingw32
       command:
        - sudo: false
-         program: choco
-         argument: install -y gradle
+         program: choco install -y
+         argument: gradle
 
 # -------------------------------------------------------------------------- }}}

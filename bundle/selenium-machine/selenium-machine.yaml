@@ -1,0 +1,13 @@
+# {{{ Include files
+includes:
+  - app:
+    - name: selenium
+    - name: google-chrome
+    - name: docbld
+    - name: amber
+    - name: autodoc
+    - name: atom
+    - name: miktex
+    - name: texstudio
+
+# -------------------------------------------------------------------------- }}}

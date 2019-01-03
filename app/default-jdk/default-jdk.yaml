@@ -9,7 +9,7 @@ installations:
     - name: linux
       command:
        - sudo: true
-         program: apt-get 
-         argument: install -y default-jdk 
+         program: apt-get install -y
+         argument: default-jdk 
 
 # -------------------------------------------------------------------------- }}}

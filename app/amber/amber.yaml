@@ -25,6 +25,10 @@ installations:
          argument: bundle exec rake install
 
        - sudo: false
+         program: gem clean 
+         argument: amber 
+
+       - sudo: false
          program: amber
          argument: --version
 # ------------------------------------------------------------------------- }}}

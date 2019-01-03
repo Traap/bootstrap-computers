@@ -2,7 +2,7 @@
 includes:
   - app:
     - name: operating-system
-# -------------------------------------------------------------------------- }}}
+
 # -------------------------------------------------------------------------- }}}
 # {{{ Installations
 installations:
@@ -16,7 +16,7 @@ installations:
   - name: linux 
     command:
     - sudo: true 
-      program: apt-get 
-      argument:  install -y haskell-platform
+      program: apt-get install -y
+      argument: haskell-platform
 
 # -------------------------------------------------------------------------- }}}

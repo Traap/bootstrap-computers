@@ -2,6 +2,7 @@
 includes:
   - app:
     - name: operating-system
+
 # -------------------------------------------------------------------------- }}}
 # {{{ Installations
 installations:
@@ -9,13 +10,13 @@ installations:
     - name: linux
       command:
        - sudo: true
-         program: apt-get 
-         argument: install -y openjre-8-jre
+         program: apt-get install -y
+         argument: openjre-8-jre
 
     - name: cygwin 
       command:
        - sudo: false 
-         program: choco 
-         argument: install -y jre8 
+         program: choco install -y
+         argument: jre8 
 
 # -------------------------------------------------------------------------- }}}

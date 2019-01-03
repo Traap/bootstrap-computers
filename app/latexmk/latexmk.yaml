@@ -2,6 +2,7 @@
 includes:
   - app:
     - name: operating-system
+
 # -------------------------------------------------------------------------- }}}
 # {{{ Installations
 installations:
@@ -9,7 +10,7 @@ installations:
    - name: linux
      command:
       - sudo: true
-        program: apt
-        argument: install latexmk 
+        program: apt-get install -y
+        argument: latexmk 
 
 # -------------------------------------------------------------------------- }}}

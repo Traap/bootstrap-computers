@@ -22,10 +22,26 @@ installations:
     - name: mingw32 
       command:
        - sudo: false
-         program: choco 
-         argument: install selinium -y 
+         program: choco install -y
+         argument: selinium
 
        - sudo: false
-         program: choco 
-         argument: install selenium-chrome-driver -y 
+         program: choco install -y 
+         argument: selenium-chrome-driver
+
+       - sudo: false
+         program: choco install -y 
+         argument: selenium-ie-driver
+
+       - sudo: false
+         program: choco install -y 
+         argument: selenium-edge-driver
+
+       - sudo: false
+         program: choco install -y 
+         argument: selenium-geko-driver
+
+       - sudo: false
+         program: choco install -y 
+         argument: selenium-opera-driver
 # -------------------------------------------------------------------------- }}}

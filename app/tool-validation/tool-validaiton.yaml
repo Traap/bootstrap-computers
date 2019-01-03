@@ -1,8 +1,0 @@
-# -------------------------------------------------------------------------- }}}
-# {{{ Repositories
-repos:
-  - repo:
-    url: http://github.com
-    paths:
-      - source: Traap/tool-validation
-        target: ~/git/tool-validation

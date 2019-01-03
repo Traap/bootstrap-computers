@@ -2,6 +2,7 @@
 includes:
   - app:
     - name: operating-system
+
 # -------------------------------------------------------------------------- }}}
 # {{{ Installations
 installations:
@@ -15,18 +16,15 @@ installations:
    - name: linux 
      command:
       - sudo: true 
-        program: apt-get 
-        argument: install -y gdebi 
+        program: apt-get install -y
+        argument: gdebi 
         
       - sudo: false
         program: wget 
         argument: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
         
       - sudo: yes
-        program: apt-get 
-        argument: install -y gdebi 
-
-      - sudo: yes
         program: gdebi
         argument: google-chrome-stable_current_amd64.deb
+
 # -------------------------------------------------------------------------- }}}

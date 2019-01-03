@@ -25,8 +25,8 @@ installations:
    - name: darwin 
      command:
         - sudo: false
-          program: brew
-          argument: install mutt
+          program: brew install
+          argument: mutt
 
         - sudo: false
           program: mkdir

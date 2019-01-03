@@ -4,6 +4,7 @@ installations:
    - name: mingw32
      command:
       - sudo: false
-        program: choco
-        argument: install texstudio -y
+        program: choco install -y
+        argument: texstudio
+
 # -------------------------------------------------------------------------- }}}

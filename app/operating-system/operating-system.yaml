@@ -4,21 +4,31 @@ installations:
    - name: linux
      command:
       - sudo: true 
-        program: apt-get 
-        argument: -y update 
+        program: apt-get -y
+        argument: update 
 
       - sudo: true 
-        program: apt-get 
-        argument: -y upgrade
+        program: apt-get -y
+        argument: upgrade
 
       - sudo: true 
-        program: apt-get 
-        argument: -y autoremove 
+        program: apt-get -y
+        argument: autoremove 
 
    - name: msys2
      command:
       - sudo: false 
         program: pacman 
         argument: --noconfirm -Su
+
+   - name: mingw32 
+     command:
+      - sudo: false 
+        program: choco
+        argument: upgrade all 
+
+      - sudo: false 
+        program: pacman 
+        argument: --noconfirm -Su 
 
 # -------------------------------------------------------------------------- }}}

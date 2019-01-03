@@ -4,7 +4,7 @@ installations:
     - name: darwin
       command:
        - sudo: false
-         program: brew 
-         argument: install openconnect 
+         program: brew install
+         argument: openconnect 
  
 # -------------------------------------------------------------------------- }}}

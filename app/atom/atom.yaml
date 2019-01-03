@@ -4,6 +4,6 @@ installations:
     - name: mingw32 
       command:
        - sudo: false
-         program: choco 
-         argument: install atom -y 
+         program: choco install -y
+         argument: atom 
 # ------------------------------------------------------------------------- }}}

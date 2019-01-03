@@ -1,0 +1,19 @@
+# {{{ Installations
+installations:
+  - os:
+    - name: any 
+      command:
+       - sudo: false
+         program: brew 
+         argument: update 
+ 
+       # No kidding, do it twice.
+       - sudo: false
+         program: brew 
+         argument: update 
+ 
+       - sudo: false
+         program: brew 
+         argument: doctor 
+ 
+# -------------------------------------------------------------------------- }}}

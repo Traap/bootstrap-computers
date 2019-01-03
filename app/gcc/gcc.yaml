@@ -2,42 +2,32 @@
 includes:
   - app:
     - name: operating-system
+    - name: brew-update
+
 # -------------------------------------------------------------------------- }}}
 # {{{ Installations
 installations:
  - os:
    - name: darwin 
      command:
-        - sudo: false 
-          program: brew 
-          argument: update 
-
-        # No kidding, do it twice.
-        - sudo: false 
-          program: brew 
-          argument: update 
-
-        - sudo: false 
-          program: brew 
-          argument: doctor
-
-        - sudo: false 
-          program: brew 
-          argument: gcc 
+       - sudo: false 
+         program: brew 
+         argument: gcc 
           
    - name: msys
-        - sudo: false 
-          program: pacman 
-          argument: --noconfirm -S gcc   
+     command:
+       - sudo: false 
+         program: pacman 
+         argument: --noconfirm -S gcc   
 
    - name: linux 
      command:
-        - sudo: true 
-          program: apt-get 
-          argument: install -y build-essential
+       - sudo: true 
+         program: apt-get install -y
+         argument: build-essential
 
-        - sudo: true 
-          program: apt-get 
-          argument: install -y gcc 
+       - sudo: true 
+         program: apt-get install -y
+         argument: gcc 
 
 # -------------------------------------------------------------------------- }}}

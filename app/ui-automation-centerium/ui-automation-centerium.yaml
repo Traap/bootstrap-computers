@@ -1,9 +1,0 @@
-# {{{ Repositories
-repos:
-  - repo:
-    url: http://github.com
-    paths:
-      - source: Traap/ui-automation-centerium
-        target: ~/git/ui-automation-centerium
-
-# -------------------------------------------------------------------------- }}}
