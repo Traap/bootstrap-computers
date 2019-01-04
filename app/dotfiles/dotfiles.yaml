@@ -1,6 +1,10 @@
 # {{{ Symbolic Links
 symlinks:
   - symlink:
+    - file: ~/git/dotfiles/bash_logout
+      link: ~/.bash_logout
+      directory: false
+
     - file: ~/git/dotfiles/bash_profile
       link: ~/.bash_profile
       directory: false
