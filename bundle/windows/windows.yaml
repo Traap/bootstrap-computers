@@ -1,6 +1,6 @@
 # {{{ Include files
 includes:
-  - bundles:
+  - bundle:
     - name: basic
     - name: advanced 
     - name: editors 
