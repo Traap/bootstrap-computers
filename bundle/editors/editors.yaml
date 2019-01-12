@@ -2,7 +2,6 @@
 includes:
   - app:
     - name: operating-system
-    - name: atom 
     - name: vim 
     - name: vscode
 # -------------------------------------------------------------------------- }}}
