@@ -1,0 +1,9 @@
+# {{{ Installations
+installations:
+  - os:
+    - name: mingw32 
+      command:
+       - sudo: false
+         program: choco install -y
+         argument: vcxsrv 
+# ------------------------------------------------------------------------- }}}

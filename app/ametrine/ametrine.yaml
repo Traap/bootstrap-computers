@@ -1,10 +1,10 @@
 # {{{ Repositories
 repos:
   - repo:
-    url: http://github.com
+    url: https://bitbucket-vial.intra.fresenius-kabi.com/scm/rdtest/
     paths:
-      - source: Traap/amber
-        target: ~/git/amber
+      - source: ametrine
+        target: ~/git/ametrine
 
 # -------------------------------------------------------------------------- }}}
 # {{{ Installations
@@ -13,22 +13,22 @@ installations:
     - name: any
       command:
        - sudo: false
-         program: cd ~/git/amber &&
+         program: cd ~/git/ametrine &&
          argument: bundle install
 
        - sudo: false
-         program: cd ~/git/amber &&
+         program: cd ~/git/ametrine &&
          argument: bundle exec rake
 
        - sudo: false
-         program: cd ~/git/amber &&
+         program: cd ~/git/ametrine &&
          argument: bundle exec rake install
 
        - sudo: false
          program: gem clean 
-         argument: amber 
+         argument: ametrine 
 
        - sudo: false
-         program: amber
+         program: ametrine
          argument: --version
 # -------------------------------------------------------------------------- }}}

@@ -4,7 +4,7 @@ includes:
     - name: basic
     - name: advanced 
     - name: editors 
-    - name: latex
+    - name: latexmk
     - name: automation 
 
 # -------------------------------------------------------------------------- }}}
