@@ -1,11 +1,9 @@
 # {{{ Include files
 includes:
   - bundle:
-    - name: basic 
+    - name: basic
   - file:
-    - name: app/ssh/ssh.yaml
+    - name: app/dotfiles/dotfiles.yaml
   - app:
-    - name: mutt
-
+    - name: vim 
 # -------------------------------------------------------------------------- }}}
-
