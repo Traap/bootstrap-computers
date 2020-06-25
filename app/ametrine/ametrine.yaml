@@ -1,7 +1,7 @@
 # {{{ Repositories
 repos:
   - repo:
-    url: https://bitbucket-vial.intra.fresenius-kabi.com/scm/rdtest/
+    url: https://bitbucket/scm/rdtest/
     paths:
       - source: ametrine
         target: ~/git/ametrine
