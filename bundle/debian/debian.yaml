@@ -1,8 +1,13 @@
 # {{{ Include files
 includes:
-  - bundle:
-    - name: basic
-    - name: advanced 
-    - name: latex
-
+  - app:
+    - name: amber
+    - name: bash-git-prompt
+    - name: colors
+    - name: dotfiles
+    - name: ssh
+    - name: ssh 
+    - name: symlink 
+    - name: tmux
+    - name: vim 
 # -------------------------------------------------------------------------- }}}
