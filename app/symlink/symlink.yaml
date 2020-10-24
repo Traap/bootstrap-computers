@@ -5,12 +5,12 @@ symlinks:
       link: ~/.bash_logout
       directory: false
 
-    - file: ~/git/dotfiles/bash_profile
-      link: ~/.bash_profile
-      directory: false
-
     - file: ~/git/dotfiles/bashrc
       link: ~/.bashrc
+      directory: false
+
+    - file: ~/git/dotfiles/bashrc-personal
+      link: ~/.bashrc-personal 
       directory: false
 
     - file: ~/git/dotfiles/dircolors
@@ -41,7 +41,7 @@ symlinks:
       link: ~/.tmux
       directory: true 
 
-    - file: ~/git/tmux.config
+    - file: ~/git/tmux/tmux.config
       link: ~/.tmux.config
       directory: false
 
@@ -49,11 +49,11 @@ symlinks:
       link: ~/.vim
       directory: true 
 
-    - file: ~/git/vimrc_background
+    - file: ~/git/vim/vimrc_background
       link: ~/.vimrc_background
-      directory: true 
+      directory: false 
 
     - file: ~/git/vimrc
       link: ~/.vimrc
-      directory: true 
+      directory: false 
 # -------------------------------------------------------------------------- }}}
