@@ -1,20 +1,59 @@
 # {{{ Symbolic Links
 symlinks:
   - symlink:
+    - file: ~/git/dotfiles/bash_logout
+      link: ~/.bash_logout
+      directory: false
+
     - file: ~/git/dotfiles/bash_profile
-      link: ~/linkA
+      link: ~/.bash_profile
       directory: false
 
     - file: ~/git/dotfiles/bashrc
-      link: ~/linkB
+      link: ~/.bashrc
+      directory: false
+
+    - file: ~/git/dotfiles/dircolors
+      link: ~/.dircolors
       directory: false
 
     - file: ~/git/dotfiles/inputrc
-      link: ~/linkC
+      link: ~/.inputrc
       directory: false
 
     - file: ~/git/dotfiles/minttyrc
-      link: ~/linkD
+      link: ~/.minttyrc
       directory: false
 
+    - file: ~/git/ssh/config.vim
+      link: ~/.config.vim
+      directory: false
+
+    - file: ~/git/ssh/gitconfig
+      link: ~/.gitconfig
+      directory: false
+
+    - file: ~/git/ssh/gitignore_global
+      link: ~/.gitignore_global
+      directory: false
+
+    - file: ~/git/tmux
+      link: ~/.tmux
+      directory: true 
+
+    - file: ~/git/tmux.config
+      link: ~/.tmux.config
+      directory: false
+
+    - file: ~/git/vim
+      link: ~/.vim
+      directory: true 
+
+    - file: ~/git/vimrc_background
+      link: ~/.vimrc_background
+      directory: true 
+
+    - file: ~/git/vimrc
+      link: ~/.vimrc
+      directory: true 
 # -------------------------------------------------------------------------- }}}
