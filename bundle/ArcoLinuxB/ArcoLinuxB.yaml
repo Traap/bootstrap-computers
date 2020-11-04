@@ -1,0 +1,32 @@
+# {{{ Update ArchLinux packages and community packages. 
+
+installations:
+ - os:
+   - name: linux-gnu
+     command:
+      - sudo: true
+        program: pacman -Syyu --noconfirm
+
+      - sudo: false 
+        program: yay -Syu --noconfirm 
+
+      - sudo: false 
+        program: yay -Syu --noconfirm neovim 
+
+      - sudo: false 
+        program: yay -Syu --noconfirm fzf
+
+      - sudo: false 
+        program: yay -Syu --noconfirm fzf
+
+# -------------------------------------------------------------------------- }}}
+# {{{ Setup symbolic links, setup colors, and bash-git-prompts. 
+        
+includes:
+  - app:
+    - name: symlink 
+    - name: colors
+    - name: bash-git-prompt 
+    - name: vim
+
+# -------------------------------------------------------------------------- }}}

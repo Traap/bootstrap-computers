@@ -1,0 +1,87 @@
+Parsing bundle/arcolinuxb/arcolinuxb.yaml
+Installing programs
+yay -Syu --noconfirm 
+
+Including --app=symlink,colors,fzf,vim,miktex,latexmk
+
+emend --app=symlink,colors,fzf,vim,miktex,latexmk --verbose
+Parsing app/symlink/symlink.yaml
+Deleting symbolic links
+rm -frv ~/.bash_logout
+rm -frv ~/.bashrc
+rm -frv ~/.bashrc-personal
+rm -frv ~/.dircolors
+rm -frv ~/.inputrc
+rm -frv ~/.minttyrc
+rm -frv ~/.config.vim
+rm -frv ~/.gitconfig
+rm -frv ~/.gitignore_global
+rm -frv ~/.tmux/
+rm -frv ~/.tmux.config
+rm -frv ~/.vim/
+rm -frv ~/.vimrc_background
+rm -frv ~/.vimrc
+
+Making symbolic links
+ln -s ~/git/dotfiles/bash_logout ~/.bash_logout
+ln -s ~/git/dotfiles/bashrc ~/.bashrc
+ln -s ~/git/dotfiles/bashrc-personal ~/.bashrc-personal
+ln -s ~/git/dotfiles/dircolors ~/.dircolors
+ln -s ~/git/dotfiles/inputrc ~/.inputrc
+ln -s ~/git/dotfiles/minttyrc ~/.minttyrc
+ln -s ~/git/ssh/config.vim ~/.config.vim
+ln -s ~/git/ssh/gitconfig ~/.gitconfig
+ln -s ~/git/ssh/gitignore_global ~/.gitignore_global
+ln -s ~/git/tmux ~/.tmux
+ln -s ~/git/tmux/tmux.config ~/.tmux.config
+ln -s ~/git/vim ~/.vim
+ln -s ~/git/vim/vimrc_background ~/.vimrc_background
+ln -s ~/git/vimrc ~/.vimrc
+
+Parsing app/colors/colors.yaml
+Cloning repositories
+git clone http://github.com/chriskempson/base16-gnome-terminal ~/git/color/base16-gnome-terminal
+git clone http://github.com/chriskempson/base16-iterm2 ~/git/color/base16-iterm2
+git clone http://github.com/chriskempson/base16-shell ~/git/color/base16-shell
+
+Parsing app/fzf/fzf.yaml
+Installing programs
+pacman -Sy --noconfirm fzf
+
+Parsing app/vim/vim.yaml
+Installing programs
+sudo apt-add-repository -y ppa:jonathonf/vim
+sudo apt-get -y update
+sudo apt-get -y install vim
+vim +PlugInstall! +PlugClean +qall
+
+Parsing app/miktex/miktex.yaml
+Including --app=operating-system
+
+emend --app=operating-system --verbose
+Parsing app/operating-system/operating-system.yaml
+Installing programs
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y autoremove
+
+Installing programs
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80  --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889
+echo "deb http://miktex.org/download/ubuntu xenial universe" |  sudo tee /etc/apt/sources.list.d/miktex.list
+sudo apt-get install -y miktex
+sudo miktexsetup --shared=yes finish
+sudo initexmf 
+
+Parsing app/latexmk/latexmk.yaml
+Including --app=operating-system
+
+emend --app=operating-system --verbose
+Parsing app/operating-system/operating-system.yaml
+Installing programs
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y autoremove
+
+Installing programs
+sudo apt-get install -y latexmk
+

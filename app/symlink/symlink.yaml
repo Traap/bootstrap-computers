@@ -41,6 +41,10 @@ symlinks:
       link: ~/.tmux
       directory: true 
 
+    - file: ~/git/ssh
+      link: ~/.ssh
+      directory: true 
+
     - file: ~/git/tmux/tmux.config
       link: ~/.tmux.config
       directory: false
@@ -49,11 +53,16 @@ symlinks:
       link: ~/.vim
       directory: true 
 
+    - file: ~/git/vim/nvim.vim
+      link: ~/.config/nvim/init.vim
+      directory: false
+
+    - file: ~/git/vim/vimrc
+      link: ~/.vimrc
+      directory: false 
+
     - file: ~/git/vim/vimrc_background
       link: ~/.vimrc_background
       directory: false 
 
-    - file: ~/git/vimrc
-      link: ~/.vimrc
-      directory: false 
 # -------------------------------------------------------------------------- }}}

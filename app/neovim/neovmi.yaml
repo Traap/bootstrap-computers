@@ -1,0 +1,25 @@
+# {{{ Repositories
+
+repos:
+  - repo:
+    url: http://github.com
+    paths:
+      - source: neovim/neovim 
+        target: ~/git/neovim
+
+# -------------------------------------------------------------------------- }}}
+# {{{ Installations
+
+installations:
+ - os:
+   - name: linux-gnu
+     command:
+      - sudo: true
+        program: pacman -Syyu --noconfirm base-devel cmake unzip ninja
+
+   - name:  any 
+     command:
+        - sudo: false
+          program:  cd ~/git/neovim && make CMAKE_BUILD_TYPE=Release
+
+# -------------------------------------------------------------------------- }}}

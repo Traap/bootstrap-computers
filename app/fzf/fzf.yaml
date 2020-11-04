@@ -6,4 +6,10 @@ installations:
       - sudo: false
         program: choco install -y 
         argument: fzf 
+
+   - name: linux-gnu 
+     command:
+      - sudo: no 
+        program: pacman -Sy --noconfirm  
+        argument: fzf 
 # -------------------------------------------------------------------------- }}}

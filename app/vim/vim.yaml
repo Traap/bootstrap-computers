@@ -1,52 +1,21 @@
-# {{{ Repositories
-repos:
- - repo:
-   url: http://github.com
-   paths:
-     - source: Traap/vim
-       target: ~/git/vim
+# {{{ Repositories 
 
-     - source: junegunn/vim-plug
-       target: ~/git/vim/autoload/vim-plug
+repos:
+  - repo:
+    url: http://github.com
+    paths:
+      - source: Traap/vim
+        target: ~/git/vim
 
 # -------------------------------------------------------------------------- }}}
 # {{{ Installations
+
 installations:
  - os:
-   - name: darwin
-     command:
-      - sudo: false
-        program: brew
-        argument: install Caskroom/cask/xquartz
-
-      - sudo: false
-        program: brew
-        argument: install vim --with-client-server
-
-   - name: linux
-     command:
-      - sudo: true
-        program: apt-add-repository
-        argument: -y ppa:jonathonf/vim
-
-      - sudo: true
-        program: apt-get
-        argument: -y update
-
-      - sudo: true
-        program: apt-get
-        argument: -y install vim
-
-   - name: mingw32
-     command:
-      - sudo: false
-        program: choco
-        argument: install vim -y
-
    - name: any
      command:
       - sudo: false
         program: vim
-        argument: +PlugInstall! +PlugClean +qall
+        argument: +qall
 
 # -------------------------------------------------------------------------- }}}
