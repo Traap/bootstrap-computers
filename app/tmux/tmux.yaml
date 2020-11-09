@@ -1,5 +1,18 @@
+# {{{ Symbolic Links
+
+symlinks:
+  - symlink:
+    - file: ~/git/tmux
+      link: ~/.tmux
+      directory: true 
+
+    - file: ~/git/tmux/tmux.conf
+      link: ~/.tmux.conf
+      directory: false
+
 # -------------------------------------------------------------------------- }}}
 # {{{ Repositories
+
 repos:
   - repo:
     url: http://github.com
@@ -12,6 +25,7 @@ repos:
 
 # -------------------------------------------------------------------------- }}}
 # {{{ Installations
+
 installations:
  - os:
    - name: darwin 
