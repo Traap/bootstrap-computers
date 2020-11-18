@@ -53,7 +53,7 @@ symlinks:
       link: ~/.vim
       directory: true 
 
-    - file: ~/git/vim/nvim.vim
+    - file: ~/git/vim/init.vim
       link: ~/.config/nvim/init.vim
       directory: false
 
