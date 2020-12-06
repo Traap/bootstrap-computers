@@ -43,15 +43,18 @@ installations:
    - name: linux
      command:
         - sudo: true
-          program: apt-add-repository
-          argument: ppa:jonathonf/texlive
-
-        - sudo: true
-          program: apt-get update -y
-          argument: 
-
-        - sudo: true
           program: apt-get install -y
-          argument: texlive-full
+          argument: > 
+            texlive
+            texlive-latex-extra
+            texlive-publishers
+            texlive-science
+            texlive-pstricks
+            texlive-pictures
+            texlive-metapost
+            texlive-music
+
+        - sudo: true
+          program: mktexlsr
 
 # -------------------------------------------------------------------------- }}}
