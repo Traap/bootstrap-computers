@@ -12,10 +12,10 @@ repos:
 
 installations:
  - os:
+   # Will experiment running Vim from a subshell.  This may fail misserably. 
    - name: any
      command:
       - sudo: false
-        program: vim
-        argument: +qall
+        program: (vim +qall)
 
 # -------------------------------------------------------------------------- }}}
