@@ -14,19 +14,7 @@ installations:
       command:
        - sudo: false
          program: cd ~/git/amber &&
-         argument: bundle install
-
-       - sudo: false
-         program: cd ~/git/amber &&
-         argument: bundle exec rake
-
-       - sudo: false
-         program: cd ~/git/amber &&
-         argument: bundle exec rake install
-
-       - sudo: false
-         program: gem clean 
-         argument: amber 
+         argument: rake build:amber 
 
        - sudo: false
          program: amber
