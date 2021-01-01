@@ -6,6 +6,10 @@ installations:
        - sudo: false 
          program: mkdir -p ~/.config/nvim 
 
+      command:
+       - sudo: false 
+         program: mkdir -p ~/.config/coc/extensions
+
 # -------------------------------------------------------------------------- }}}
 # {{{ Symbolic Links
 symlinks:
@@ -64,6 +68,10 @@ symlinks:
 
     - file: ~/git/vim/init.vim
       link: ~/.config/nvim/init.vim
+      directory: false
+
+    - file: ~/git/vim/coc-package.json
+      link: ~/.config/coc/extensions/package.json
       directory: false
 
     - file: ~/git/vim/vimrc
