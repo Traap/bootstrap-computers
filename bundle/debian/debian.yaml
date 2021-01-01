@@ -5,7 +5,6 @@ includes:
     - name: bash-git-prompt
     - name: colors
     - name: dotfiles
-    - name: ssh
     - name: ssh 
     - name: symlink 
     - name: tmux
