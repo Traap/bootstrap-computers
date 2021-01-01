@@ -1,0 +1,37 @@
+# {{{ Repositories
+
+repos:
+  - repo:
+    url: http://github.com
+    paths:
+      - source: neovim/neovim 
+        target: ~/git/neovim
+
+# -------------------------------------------------------------------------- }}}
+# {{{ Installations
+
+installations:
+ - os:
+   - name: darwin 
+     command:
+       - sudo: false 
+         program: brew 
+         argument: nvim 
+          
+   - name: msys
+     command:
+       - sudo: false 
+         program: pacman 
+         argument: --noconfirm -S nvim 
+
+   - name: linux 
+     command:
+       - sudo: false 
+         program: cd $HOME/git/neovim && 
+         argument: make 
+
+       - sudo: true 
+         program: cd $HOME/git/neovim && 
+         argument: cp build/bin/nvim /usr/bin/nvim 
+
+# -------------------------------------------------------------------------- }}}
