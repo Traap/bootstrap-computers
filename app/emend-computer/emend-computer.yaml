@@ -1,9 +1,0 @@
-# {{{ Repositories
-repos:
-  - repo:
-    url: http://github.com
-    paths:
-      - source: Traap/emend-computer
-        target: ~/git/emend-computer
-
-# -------------------------------------------------------------------------- }}}
