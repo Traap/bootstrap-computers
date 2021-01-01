@@ -20,6 +20,11 @@ installations:
    - name:  any 
      command:
         - sudo: false
-          program:  cd ~/git/neovim && make CMAKE_BUILD_TYPE=Release
+          program:  cd ~/git/neovim && 
+          argument: make 
+
+        - sudo: false 
+          program: cd ~/git/neovim &&
+          argument: sudo cp -v build/bin/nvim /usr/bin/nvim
 
 # -------------------------------------------------------------------------- }}}
