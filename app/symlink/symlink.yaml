@@ -6,7 +6,6 @@ installations:
        - sudo: false 
          program: mkdir -p ~/.config/nvim 
 
-      command:
        - sudo: false 
          program: mkdir -p ~/.config/coc/extensions
 
