@@ -1,3 +1,12 @@
+# {{{ Installations
+installations:
+  - os:
+    - name: any
+      command:
+       - sudo: false 
+         program: mkdir -p .config/nvim 
+
+# -------------------------------------------------------------------------- }}}
 # {{{ Symbolic Links
 symlinks:
   - symlink:
@@ -10,7 +19,7 @@ symlinks:
       directory: false
 
     - file: ~/git/dotfiles/bashrc-personal
-      link: ~/.bashrc-personal 
+      link: ~/.bashrc-personal
       directory: false
 
     - file: ~/git/dotfiles/dircolors
@@ -39,11 +48,11 @@ symlinks:
 
     - file: ~/git/ssh
       link: ~/.ssh
-      directory: true 
+      directory: true
 
     - file: ~/git/tmux
       link: ~/.tmux
-      directory: true 
+      directory: true
 
     - file: ~/git/tmux/tmux.conf
       link: ~/.tmux.conf
@@ -51,7 +60,7 @@ symlinks:
 
     - file: ~/git/vim
       link: ~/.vim
-      directory: true 
+      directory: true
 
     - file: ~/git/vim/init.vim
       link: ~/.config/nvim/init.vim
@@ -59,10 +68,10 @@ symlinks:
 
     - file: ~/git/vim/vimrc
       link: ~/.vimrc
-      directory: false 
+      directory: false
 
     - file: ~/git/vim/vimrc_background
       link: ~/.vimrc_background
-      directory: false 
+      directory: false
 
 # -------------------------------------------------------------------------- }}}
