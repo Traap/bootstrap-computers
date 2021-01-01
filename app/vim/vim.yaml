@@ -8,14 +8,3 @@ repos:
         target: ~/git/vim
 
 # -------------------------------------------------------------------------- }}}
-# {{{ Installations
-
-installations:
- - os:
-   # Will experiment running Vim from a subshell.  This may fail misserably. 
-   - name: any
-     command:
-      - sudo: false
-        program: (vim +qall)
-
-# -------------------------------------------------------------------------- }}}
