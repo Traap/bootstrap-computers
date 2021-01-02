@@ -4,7 +4,7 @@ repos:
   - repo:
     url: http://github.com
     paths:
-      - source: neovim/neovim 
+      - source: neovim/neovim
         target: ~/git/neovim
 
 # -------------------------------------------------------------------------- }}}
@@ -20,13 +20,40 @@ installations:
     - name: linux
       command:
       - sudo: true
-        program: apt-get install -y autoconf automake cmake libncurses5-dev g++ libtool
+        program: >
+          apt-get install -y
+          autoconf
+          automake
+          cmake
+          g++
+          gettext
+          gperf
+          libjemalloc-dev
+          libluajit-5.1-dev
+          libmsgpack-dev
+          libncurses5-dev
+          libtermkey-dev
+          libtool
+          libtool-bin
+          libunibilium-dev
+          libvterm-dev
+          lua-bitop
+          lua-lpeg
+          lua-mpack
+          lua5.1
+          ninja-build
+          pkg-config
+          unzip
 
-    - name:  any 
+    - name:  any
       command:
       - sudo: false
-        program:  cd ~/git/neovim && 
+        program:  cd ~/git/neovim &&
         argument: sudo make install
 
+    - name: linux
+      command:
+      - sudo: false
+        program: exec bash
 
 # -------------------------------------------------------------------------- }}}
