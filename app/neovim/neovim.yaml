@@ -11,20 +11,22 @@ repos:
 # {{{ Installations
 
 installations:
- - os:
-   - name: linux-gnu
-     command:
+  - os:
+    # - name: linux-gnu
+    #   command:
+    #   - sudo: true
+    #     program: pacman -Syyu --noconfirm base-devel cmake unzip ninja
+
+    - name: linux
+      command:
       - sudo: true
-        program: pacman -Syyu --noconfirm base-devel cmake unzip ninja
+        program: apt-get install -y autoconf automake cmake libncurses5-dev g++ libtool
 
-   - name:  any 
-     command:
-        - sudo: false
-          program:  cd ~/git/neovim && 
-          argument: make 
+    - name:  any 
+      command:
+      - sudo: false
+        program:  cd ~/git/neovim && 
+        argument: sudo make install
 
-        - sudo: false 
-          program: cd ~/git/neovim &&
-          argument: sudo cp -v build/bin/nvim /usr/bin/nvim
 
 # -------------------------------------------------------------------------- }}}
